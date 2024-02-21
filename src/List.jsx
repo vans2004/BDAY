@@ -6,7 +6,7 @@ const List = ({ data }) => {
     {
       data.map(i=>{
         return(
-          <article className='person'>
+          <article className='person' key={i.id}>
           <img src={i.image} alt="pic" />
           <div>
             <h2>{i.name}</h2>
